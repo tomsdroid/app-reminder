@@ -146,9 +146,9 @@ const Dashboard: React.FC = () => {
       <nav className="navbar">
         <div className="container-fluid bg-primary-subtle rounded">
           <div className="navbar-brand d-flex align-items-center justify-content-between w-100">
-            <h1 className="text-uppercase fw-bolder mt-2">
-              Hai, {user?.fullname || user?.username}!
-            </h1>
+            <h3 className="text-uppercase fw-bolder mt-2">
+              {user?.fullname || user?.username}!
+            </h3>
             <button onClick={handleLogout} className="btn btn-danger">Logout</button>
           </div>
         </div>
@@ -189,8 +189,8 @@ const Dashboard: React.FC = () => {
                   <span className="badge text-bg-secondary">Auto</span>
                 </button>
               </div>
-              <div>
-                <sub className="text-center text-secondary">Pengingat: Auto</sub>
+              <div className"w-100">
+                <sub className="text-center text-secondary">Pengingat: 07:00 - 14:00 - 20:00</sub>
               </div>
             </div>
           </div>
